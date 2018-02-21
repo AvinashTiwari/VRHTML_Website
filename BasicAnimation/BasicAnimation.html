@@ -1,0 +1,33 @@
+<html>
+
+
+<head>
+
+<script src="https://aframe.io/releases/0.5.0/aframe.js"></script>
+
+</head>
+
+
+<body>
+
+<a-scene>
+
+    <a-assets>
+    <a-asset-item id="testobj" src="test.obj"></a-asset-item>
+    <a-asset-item id="testmtl" src="test.mtl"></a-asset-item>
+
+    </a-assets>
+
+<a-entity obj-model="obj: #testobj; mtl: #testmtl" scale="0.1 0.1 0.1">
+
+    <a-animation attribute="position" from="1 1 1" to="2 4 -8" repeat="4" ></a-animation>
+</a-entity>
+
+<a-sky color="lightblue"></a-sky>
+
+
+</a-scene>
+
+
+</body>
+</html>
